@@ -6,7 +6,7 @@ const y = 20452;
 const z = 16;
 const token = "ADD YOUR TOKEN HERE";
 
-const url = "https://tiles.hibirdi.com/zxy/" + z +
+const url = "https://tiles-api.hibirdi.com/tiles/zxy/" + z +
             "/" + x +
             "/" + y +
             "?token=" + token;
