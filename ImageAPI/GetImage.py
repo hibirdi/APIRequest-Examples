@@ -10,6 +10,6 @@ token = "ADD YOUR TOKEN HERE"
 url = ("https://image-api.hibirdi.com/image/id/{}/x/{}/y/{}/z/{}?requestId={}&token={}"
        .format(imageId, x, y, z, requestId, token))
 
-response = requests.request("GET", url)
+response = requests.get(url)
 
-print(response.text)
+print(response.status_code)

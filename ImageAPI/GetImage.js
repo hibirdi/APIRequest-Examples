@@ -17,7 +17,7 @@ const url = "https://image-api.hibirdi.com/image/id/" + imageId +
 
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === 4) {
-    console.log(this.responseText);
+    console.log(this.status);
   }
 });
 
