@@ -1,6 +1,7 @@
 import requests
+import json
 
-locationID = "LOCATIONID OF LOCATION TO BE UPDATED"
+locationId = "LOCATIONID OF LOCATION TO BE UPDATED"
 userId = "ADD YOUR USER ID HERE"
 locationName = "My Location Name"
 customId = "my-custom-location-id"
@@ -52,7 +53,8 @@ data = {
 
 url = ("https://location-api.hibirdi.com/locations/{}"
        .format(locationId))
+headers = {"Content-Type": "application/json"}
 
-response = requests.request("PUT", url, data=data)
+response = requests.request("PUT", url, data=(json.dumps(data)), headers=headers)
 
 print(response.text)
