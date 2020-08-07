@@ -49,7 +49,7 @@ const data = {
     "tags": tags,
   }
 }
-const url = `https://location-api.hibirdi.com/user/${userId}/locations`;
+const url = `https://location-api.hibirdi.com/users/${userId}/locations`;
 
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === 4) {

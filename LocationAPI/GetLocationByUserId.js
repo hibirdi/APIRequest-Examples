@@ -6,7 +6,7 @@ const page = 1;
 const itemsPerPage = 100;
 const customId = "my-custom-location-id";
 const type = "construction";
-const url = "https://location-api.hibirdi.com/user/" + userId +
+const url = "https://location-api.hibirdi.com/users/" + userId +
             "/locations" +
             "?page=" + page +
             "&itemsPerPage=" + itemsPerPage +

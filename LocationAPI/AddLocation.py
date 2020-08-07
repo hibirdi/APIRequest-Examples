@@ -49,7 +49,7 @@ data = {
   }
 }
 
-url = ("https://location-api.hibirdi.com/user/{}/locations"
+url = ("https://location-api.hibirdi.com/users/{}/locations"
        .format(userId))
 
 response = requests.request("POST", url, data=data)
