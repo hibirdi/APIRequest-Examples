@@ -41,7 +41,6 @@ const data = {
   "properties": {
     "latitude": latitude,
     "longitude": longitude,
-    "zoom": zoom,
     "userId": userId,
     "locationName": locationName,
     "customId": customId,

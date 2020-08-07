@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest();
 
-const locationID = "LOCATIONID OF LOCATION TO BE UPDATED";
+const locationId = "LOCATIONID OF LOCATION TO BE UPDATED";
 const userId = "ADD YOUR USER ID HERE";
 const locationName = "My Location Name";
 const customId = "my-custom-location-id";
@@ -42,7 +42,6 @@ const data = {
   "properties": {
     "latitude": latitude,
     "longitude": longitude,
-    "zoom": zoom,
     "userId": userId,
     "locationName": locationName,
     "customId": customId,

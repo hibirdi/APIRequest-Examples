@@ -1,4 +1,5 @@
 import requests
+import json
 
 userId = "ADD YOUR USER ID HERE"
 locationName = "My Location Name"
@@ -51,7 +52,8 @@ data = {
 
 url = ("https://location-api.hibirdi.com/users/{}/locations"
        .format(userId))
+headers = {"Content-Type": "application/json"}
 
-response = requests.request("POST", url, data=data)
+response = requests.request("POST", url, data=(json.dumps(data)), headers=headers)
 
 print(response.text)
