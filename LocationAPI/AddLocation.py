@@ -1,7 +1,7 @@
 import requests
 import json
 
-userId = "ADD YOUR USER ID HERE"
+token = "ADD YOUR TOKEN HERE"
 locationName = "My Location Name"
 customId = "my-custom-location-id"
 latitude = 55.862669 # centrepoint or reference point of the location
@@ -42,7 +42,6 @@ data = {
   "properties": {
     "latitude": latitude,
     "longitude": longitude,
-    "userId": userId,
     "locationName": locationName,
     "customId": customId,
     "products": products,
@@ -51,7 +50,7 @@ data = {
 }
 
 url = ("https://location-api.hibirdi.com/users/{}/locations"
-       .format(userId))
+       .format(token))
 headers = {"Content-Type": "application/json"}
 
 response = requests.request("POST", url, data=(json.dumps(data)), headers=headers)

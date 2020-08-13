@@ -1,12 +1,12 @@
 let data = null;
 const xhr = new XMLHttpRequest();
 
-const userId = "ADD YOUR USER ID HERE";
+const token = "ADD YOUR TOKEN HERE";
 const page = 1;
 const itemsPerPage = 100;
 const customId = "my-custom-location-id";
 const type = "construction";
-const url = "https://location-api.hibirdi.com/users/" + userId +
+const url = "https://location-api.hibirdi.com/users/" + token +
             "/locations" +
             "?page=" + page +
             "&itemsPerPage=" + itemsPerPage +

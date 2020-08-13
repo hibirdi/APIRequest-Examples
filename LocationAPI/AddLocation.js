@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest();
 
-const userId = "ADD YOUR USER ID HERE";
+const token = "ADD YOUR TOKEN HERE";
 const locationName = "My Location Name";
 const customId = "my-custom-location-id";
 const latitude = 55.862669; // centrepoint or reference point of the location
@@ -41,14 +41,13 @@ const data = {
   "properties": {
     "latitude": latitude,
     "longitude": longitude,
-    "userId": userId,
     "locationName": locationName,
     "customId": customId,
     "products": products,
     "tags": tags,
   }
 }
-const url = `https://location-api.hibirdi.com/users/${userId}/locations`;
+const url = `https://location-api.hibirdi.com/users/${token}/locations`;
 
 xhr.addEventListener("readystatechange", function () {
   if (this.readyState === 4) {
